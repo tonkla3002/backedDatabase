@@ -13,10 +13,10 @@ app.use(cors())
 
 const client = new Client({
     host: "localhost",
-    user: "postgres",
-    port: 5433,
-    password: "1234",
-    database: "ProjectDatabase"
+    user: process.env.USER,
+    port: process.env.PORT,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 })
 
 
